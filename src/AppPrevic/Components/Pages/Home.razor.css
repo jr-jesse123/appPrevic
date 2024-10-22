@@ -1,0 +1,14 @@
+.boxContainer{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box{
+    width: 100%;
+    max-width: 600px;
+    height: 134px;
+    border-radius: 15px;
+    background-color: antiquewhite;
+    box-shadow: 4px 4px 8px 6px rgba(147, 157, 168, 0.342);
+}
