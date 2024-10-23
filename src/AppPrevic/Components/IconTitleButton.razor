@@ -1,0 +1,48 @@
+@namespace AppPrevic.Components
+
+<div class="icon-title-button">
+    <div class="icon-title">
+        @Icon
+        <h3>@Title</h3>
+    </div>
+    <button class="btn btn-primary">@ButtonText</button>
+</div>
+
+<style>
+    .icon-title-button {
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        gap: 16px;
+        max-width: 600px;
+    }
+
+    .icon-title {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .icon-title h3 {
+        margin: 0;
+    }
+
+    .btn {
+        width: 100%;
+    }
+</style>
+
+@code {
+    [Parameter]
+    public required string Title { get; init; }
+
+    [Parameter]
+    public required RenderFragment Icon { get; set; }
+
+    [Parameter]
+    public required string ButtonText { get; init; }
+}

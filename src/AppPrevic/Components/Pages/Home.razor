@@ -1,7 +1,15 @@
 ﻿@page "/"
+@layout Layout.EmptyLayout
+@using Svgs
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+<h1>Página Inicial</h1>
 
-Welcome to your new app.
+<IconTitleButton 
+    Title="Adicionar Item" 
+    ButtonText="Adicionar">
+    <Icon>
+        <PlusCircleIcon Width="24" Height="24" Color="#007bff" />
+    </Icon>
+</IconTitleButton>
