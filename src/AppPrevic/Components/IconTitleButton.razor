@@ -2,10 +2,10 @@
 
 <div class="icon-title-button">
     <div class="icon-title">
-        @Icon
-        <h3>@Title</h3>
+        <div class="icon">@Icon</div>
+        <h5>@Title</h5>
     </div>
-    <button class="btn btn-primary">@ButtonText</button>
+    <button class="btn btn-dark">@ButtonText</button>
 </div>
 
 <style>
@@ -17,7 +17,7 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
-        width: 900%;
+        width: 100%;
         max-width: 600px;
     }
 
@@ -27,7 +27,13 @@
         gap: 8px;
     }
 
-    .icon-title h3 {
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icon-title h5 {
         margin: 0;
     }
 
