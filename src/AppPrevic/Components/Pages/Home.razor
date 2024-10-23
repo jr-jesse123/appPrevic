@@ -4,12 +4,50 @@
 
 <PageTitle>Home</PageTitle>
 
-<h1>Página Inicial</h1>
+<div class="container">
+    <h1>Página Inicial</h1>
 
-<IconTitleButton 
-    Title="Adicionar Item" 
-    ButtonText="Adicionar">
-    <Icon>
-        <PlusCircleIcon Width="24" Height="24" Color="#007bff" />
-    </Icon>
-</IconTitleButton>
+    <IconTitleButton 
+        Title="Novo Chamado" 
+        ButtonText="Acessar">
+        <Icon>
+            <PlusCircleIcon Width="24" Height="24" Color="#007bff" />
+        </Icon>
+    </IconTitleButton>
+
+    <IconTitleButton 
+        Title="Meus Chamados" 
+        ButtonText="Acessar">
+        <Icon>
+            <MenuBurgerIcon Width="24" Height="24" Color="#007bff" />
+        </Icon>
+    </IconTitleButton>
+
+    <IconTitleButton 
+        Title="Chamados da Empresa" 
+        ButtonText="Acessar">
+        <Icon>
+            <BuildingIcon Width="24" Height="24" Color="#007bff" />
+        </Icon>
+    </IconTitleButton>
+
+    <IconTitleButton 
+        Title="Perguntas Frequentes" 
+        ButtonText="Acessar">
+        <Icon>
+            <FaqIcon Width="24" Height="24" Color="#007bff" />
+        </Icon>
+    </IconTitleButton>
+</div>
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+        gap: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+</style>
